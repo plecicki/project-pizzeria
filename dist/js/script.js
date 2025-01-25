@@ -96,7 +96,7 @@
         event.preventDefault();
 
         /* find active product (product that has active class) */
-        const activeProducts = document.querySelectorAll(select.menuProduct.clickable + ',.active');
+        const activeProducts = document.querySelectorAll(select.all.menuProducts+".active");
 
         /* if there is active product and it's not thisProduct.element, remove class active from it */
         for (let activeProduct of activeProducts) {
