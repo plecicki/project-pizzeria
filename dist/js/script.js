@@ -406,10 +406,16 @@
       
       fetch(url, options)
         .then(function(response){
-          return response.json();
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error('Something went wrong');
         }).then(function(parsedResponse){
           console.log('parsedResponse', parsedResponse);
         })
+        .catch((error) => {
+          console.log(error)
+        });
     }
 
     remove(cartProduct) {
@@ -563,7 +569,10 @@
 
       fetch(url)
         .then(function(rawResponse){
-          return rawResponse.json();
+          if(rawResponse.ok) {
+            return rawResponse.json();
+          }
+          throw new Error('API didnt respond');
         })
         .then(function(parsedResponse){
           console.log('parsedResponse', parsedResponse);
@@ -574,6 +583,9 @@
           // Execute initMenu method
           thisApp.initMenu();
         })
+        .catch((error) => {
+          console.log(error)
+        });
 
       console.log('thisApp.data', JSON.stringify(thisApp.data));
     },
