@@ -206,78 +206,51 @@
     {
       "address": "",
       "phone": "",
-      "totalPrice": 40,
-      "subtotalPrice": "20",
-      "totalNumber": "1",
+      "totalPrice": 38,
+      "subtotalPrice": "18",
+      "totalNumber": "2",
       "deliveryFee": "20",
       "products": [
         {
-          "id": "pizza",
-          "name": "Nonna Alba's Pizza",
-          "amount": 1,
-          "priceSingle": 20,
-          "price": 20,
-          "params": {
-            "sauce": {
-              "label": "Sauce",
-              "options": {
-                "tomato": "Tomato"
-              }
-            },
-            "toppings": {
-              "label": "Toppings",
-              "options": {
-                "olives": "Olives",
-                "greenPeppers": "Green peppers",
-                "mushrooms": "Mushrooms",
-                "basil": "Fresh basil"
-              }
-            },
-            "crust": {
-              "label": "pizza crust",
-              "options": {
-                "thin": "thin"
-              }
-            }
-          }
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
+          "params": {}
         }
       ],
       "id": 1
     },
     {
-      "address": "",
-      "phone": "",
-      "totalPrice": 40,
-      "subtotalPrice": "20",
-      "totalNumber": "1",
+      "address": "asdasd",
+      "phone": "asdasd",
+      "totalPrice": 37,
+      "subtotalPrice": "17",
+      "totalNumber": "2",
       "deliveryFee": "20",
       "products": [
         {
-          "id": "pizza",
-          "name": "Nonna Alba's Pizza",
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
           "amount": 1,
-          "priceSingle": 20,
-          "price": 20,
+          "priceSingle": 9,
+          "price": 9,
+          "params": {}
+        },
+        {
+          "id": "salad",
+          "name": "Nonno Alberto's Salad",
+          "amount": 1,
+          "priceSingle": 8,
+          "price": 8,
           "params": {
-            "sauce": {
-              "label": "Sauce",
+            "ingredients": {
+              "label": "Ingredients",
               "options": {
-                "tomato": "Tomato"
-              }
-            },
-            "toppings": {
-              "label": "Toppings",
-              "options": {
-                "olives": "Olives",
-                "greenPeppers": "Green peppers",
-                "mushrooms": "Mushrooms",
-                "basil": "Fresh basil"
-              }
-            },
-            "crust": {
-              "label": "pizza crust",
-              "options": {
-                "thin": "thin"
+                "cucumber": "Cucumber",
+                "tomatoes": "Tomatoes",
+                "herbs": "Fresh herbs"
               }
             }
           }
@@ -288,40 +261,18 @@
     {
       "address": "",
       "phone": "",
-      "totalPrice": 40,
-      "subtotalPrice": "20",
-      "totalNumber": "1",
+      "totalPrice": 38,
+      "subtotalPrice": "18",
+      "totalNumber": "2",
       "deliveryFee": "20",
       "products": [
         {
-          "id": "pizza",
-          "name": "Nonna Alba's Pizza",
-          "amount": 1,
-          "priceSingle": 20,
-          "price": 20,
-          "params": {
-            "sauce": {
-              "label": "Sauce",
-              "options": {
-                "tomato": "Tomato"
-              }
-            },
-            "toppings": {
-              "label": "Toppings",
-              "options": {
-                "olives": "Olives",
-                "greenPeppers": "Green peppers",
-                "mushrooms": "Mushrooms",
-                "basil": "Fresh basil"
-              }
-            },
-            "crust": {
-              "label": "pizza crust",
-              "options": {
-                "thin": "thin"
-              }
-            }
-          }
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
+          "params": {}
         }
       ],
       "id": 3
