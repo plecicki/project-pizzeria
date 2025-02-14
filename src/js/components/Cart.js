@@ -63,7 +63,6 @@ class Cart {
         for (let prod of thisCart.products) {
             payload.products.push(prod.getData());
         }
-        console.log(payload);
 
         const options = {
             method: 'POST',
@@ -94,7 +93,6 @@ class Cart {
 
         const productIndex = thisCart.products.indexOf(cartProduct);
         thisCart.products.splice(productIndex, 1);
-        console.log(thisCart.products);
 
         thisCart.update();
     }

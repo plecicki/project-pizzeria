@@ -8,8 +8,6 @@ class Booking {
     constructor(element) {
         const thisBooking = this;
 
-        console.log('element', element);
-
         thisBooking.render(element);
         thisBooking.initWidgets();
         thisBooking.getData();
@@ -37,15 +35,11 @@ class Booking {
             ],
         };
 
-        console.log('getData params', params);
-
         const urls = {
             booking:       settings.db.url + '/' + settings.db.bookings + '?' + params.booking.join('&'),
             eventsCurrent: settings.db.url + '/' + settings.db.events + '?' + params.eventsCurrent.join('&'),
             eventsRepeat:  settings.db.url + '/' + settings.db.events + '?' + params.eventsRepeat.join('&'),
         };
-
-        console.log('urls', urls);
 
         Promise.all([
             fetch(urls.booking),
