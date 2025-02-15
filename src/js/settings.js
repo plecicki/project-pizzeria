@@ -71,6 +71,10 @@ export const select = {
         edit: '[href="#edit"]',
         remove: '[href="#remove"]',
     },
+
+    home: {
+        navButtons: '.nav-button',
+    },
 };
 
 export const classNames = {

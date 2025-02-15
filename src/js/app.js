@@ -1,4 +1,5 @@
 import { settings, select, classNames } from "./settings.js";
+import { appAdvice } from "./appAdvice.js";
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 import Booking from "./components/Booking.js";
@@ -9,6 +10,7 @@ const app = {
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
+    thisApp.navButtons = document.querySelectorAll(select.home.navButtons);
 
     const idFromHash = window.location.hash.replace('#/', '');
 
@@ -23,16 +25,11 @@ const app = {
     thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
-      link.addEventListener('click', function (event) {
-        const clickedElement = this;
-        event.preventDefault();
+      appAdvice.configureNavLink(thisApp, link);
+    }
 
-        const id = clickedElement.getAttribute('href').replace('#', '');
-
-        thisApp.activatePage(id);
-
-        window.location.hash = '#/' + id;
-      });
+    for (let link of thisApp.navButtons) {
+      appAdvice.configureNavLink(thisApp, link);
     }
   },
   activatePage: function (pageId) {
