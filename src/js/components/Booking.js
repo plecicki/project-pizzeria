@@ -11,6 +11,37 @@ class Booking {
         thisBooking.render(element);
         thisBooking.initWidgets();
         thisBooking.getData();
+        thisBooking.initChoosingTable();
+    }
+
+    initChoosingTable() {
+        const thisBooking = this;
+
+        thisBooking.chosenTable;
+
+        for (let table of thisBooking.dom.tables) {
+            table.addEventListener('click', function (){
+                thisBooking.checkAndChooseTable(table);
+            });
+        }
+    }
+
+    checkAndChooseTable(table) {
+        const thisBooking = this;
+
+        const date = thisBooking.datePicker.value;
+        const hour = thisBooking.hourPicker.value;
+        const parsedHour = utils.hourToNumber(hour);
+        const tableNumber = table.getAttribute(settings.booking.tableIdAttribute);
+        const parsedTableNumber = parseInt(tableNumber);
+
+        if (!thisBooking.isTableBooked(date, parsedHour, parsedTableNumber)) {
+            // if (!thisBooking.chosenTable) {
+                table.classList.add(classNames.booking.tableChosen);
+            // } else {
+            //     thisBooking.chosenTable = parsedTableNumber;
+            // }
+        }
     }
 
     getData() {
@@ -109,6 +140,18 @@ class Booking {
     
             thisBooking.booked[date][hourBlock].push(table);
         }
+    }
+
+    isTableBooked(date, hour, tableNumber) {
+        const thisBooking = this;
+
+        if (typeof thisBooking.booked[date] == 'undefined') {
+            return false;
+        } else if (typeof thisBooking.booked[date][hour] == 'undefined') {
+            return false;
+        }
+
+        return thisBooking.booked[date][hour].includes(tableNumber);
     }
 
     updateDOM() {
