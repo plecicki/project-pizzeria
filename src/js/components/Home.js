@@ -59,7 +59,16 @@ class Home {
             select.home.corouselItem
         )[0];
         firstCarouselItem.classList.add(classNames.home.carouselItemActive);
-        console.log(firstCarouselItem);
+
+        const galleryGenHTML = templates.galleryWidget(
+            {
+                photos: home.photos,
+            }
+        );
+        thisHome.dom.gallery = thisHome.dom.wrapper.querySelector(
+            select.home.gallery
+        );
+        thisHome.dom.gallery.innerHTML = galleryGenHTML;
     }
 
     renderHomeButton(photoPath, buttonDOMElement, buttonClass, buttonText) {

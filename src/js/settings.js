@@ -6,6 +6,7 @@ export const select = {
         homeButtonWidget: '#template-button',
         homeInfoWidget: '#template-home-info',
         carouselWidget: '#template-carousel',
+        galleryWidget: '#template-gallery',
     },
     containerOf: {
         menu: '#product-list',
@@ -83,6 +84,7 @@ export const select = {
         homeInfo: '.home .home-info',
         carousel: '.home .carousel',
         corouselItem: '.home .carousel-item',
+        gallery: '.home .gallery',
     },
 };
 
@@ -149,4 +151,5 @@ export const templates = {
     homeButtonWidget: Handlebars.compile(document.querySelector(select.templateOf.homeButtonWidget).innerHTML),
     homeInfoWidget: Handlebars.compile(document.querySelector(select.templateOf.homeInfoWidget).innerHTML),
     carouselWidget: Handlebars.compile(document.querySelector(select.templateOf.carouselWidget).innerHTML),
+    galleryWidget: Handlebars.compile(document.querySelector(select.templateOf.galleryWidget).innerHTML),
 };

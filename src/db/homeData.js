@@ -39,5 +39,31 @@ export const home = {
             opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             author: 'Adam Nawałka',
         }
+    ],
+    photos: [
+        {
+            path: 'images/home/pizza-4.jpg',
+            alt: 'Pizzeria photo 1',
+        },
+        {
+            path: 'images/home/pizza-5.jpg',
+            alt: 'Pizzeria photo 1',
+        },
+        {
+            path: 'images/home/pizza-6.jpg',
+            alt: 'Pizzeria photo 1',
+        },
+        {
+            path: 'images/home/pizza-7.jpg',
+            alt: 'Pizzeria photo 1',
+        },
+        {
+            path: 'images/home/pizza-8.jpg',
+            alt: 'Pizzeria photo 1',
+        },
+        {
+            path: 'images/home/pizza-9.jpg',
+            alt: 'Pizzeria photo 1',
+        }
     ]
 }
