@@ -25,13 +25,19 @@ export const home = {
     },
     items: [
         {
-
+            title: 'Excelent food',
+            opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            author: 'Piotr Łęcicki',
         },
         {
-
+            title: 'Nice restaurant',
+            opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            author: 'Anna Nowak',
         },
         {
-
+            title: 'I prefer everyone',
+            opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            author: 'Adam Nawałka',
         }
     ]
 }
