@@ -88,14 +88,14 @@ $basic-font-color: white;
       align-items: center;
       opacity: 0;
       transition: 0.3s ease-in-out;
-      .icons {
-        display: flex;
-        gap: 15px;
-        i {
-          color: white;
-          font-size: 24px;
-          cursor: pointer;
-        }
+    }
+    .icons {
+      display: flex;
+      gap: 15px;
+      i {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
       }
     }
   }
