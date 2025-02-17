@@ -1,3 +1,51 @@
-.product-list {
-  padding: ($base-size * 3) 0;
+$sour-gummy-font: "Sour Gummy", serif;
+$twinkle-star-font: "Twinkle Star", serif;
+
+$basic-font-color: white;
+
+.nav-button {
+  font-family: $sour-gummy-font;
+  font-size: 30px;
+  color: $basic-font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &:hover {
+    color: $basic-font-color;
+    .button-body {
+      transform: translateY(-10px);
+    }
+  }
+  img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  .button-body {
+    position: absolute;
+    transition: transform 0.4s ease;
+  }
+}
+
+.home-info {
+  border-radius: 5px;
+  background: $color-main;
+  height: 100px;
+  color: $basic-font-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .info-header {
+    font-family: $twinkle-star-font;
+    font-size: 30px;
+  }
+  .info-text {
+    font-family: $sour-gummy-font;
+    font-size: 20px;
+  }
 }

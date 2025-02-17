@@ -12,5 +12,15 @@ export const home = {
             'pizza-8.jpg',
             'pizza-9.jpg',
         ]
-    }
+    },
+    texts: {
+        orderButton: 'ORDER ONLINE',
+        bookingButton: 'BOOK A TABLE',
+        openingLabel: {
+            title: 'Opening hours:',
+            subtitlePart1: 'TUE-SUN, ',
+            subtitlePart2: 'PM-',
+            subtitlePart3: 'AM',
+        },
+    },
 }
