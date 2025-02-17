@@ -5,6 +5,7 @@ export const select = {
         bookingWidget: '#template-booking-widget',
         homeButtonWidget: '#template-button',
         homeInfoWidget: '#template-home-info',
+        carouselWidget: '#template-carousel',
     },
     containerOf: {
         menu: '#product-list',
@@ -80,10 +81,15 @@ export const select = {
         orderButton: '.home .order-button',
         bookingButton: '.home .booking-button',
         homeInfo: '.home .home-info',
+        carousel: '.home .carousel',
+        corouselItem: '.home .carousel-item',
     },
 };
 
 export const classNames = {
+    home: {
+        carouselItemActive: 'active'
+    },
     menuProduct: {
         wrapperActive: 'active',
         imageVisible: 'active',
@@ -142,4 +148,5 @@ export const templates = {
     bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
     homeButtonWidget: Handlebars.compile(document.querySelector(select.templateOf.homeButtonWidget).innerHTML),
     homeInfoWidget: Handlebars.compile(document.querySelector(select.templateOf.homeInfoWidget).innerHTML),
+    carouselWidget: Handlebars.compile(document.querySelector(select.templateOf.carouselWidget).innerHTML),
 };

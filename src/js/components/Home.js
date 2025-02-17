@@ -1,4 +1,4 @@
-import {templates, select, settings} from "../settings.js";
+import {templates, select, settings, classNames} from "../settings.js";
 import {home} from "../../db/homeData.js"
 
 class Home {
@@ -45,6 +45,21 @@ class Home {
             select.home.homeInfo
         );
         thisHome.dom.infoLabel.innerHTML = infoLabelGenHTML;
+
+        const carouselGenHTML = templates.carouselWidget(
+            {
+                items: home.items,
+            }
+        );
+        thisHome.dom.carousel = thisHome.dom.wrapper.querySelector(
+            select.home.carousel
+        );
+        thisHome.dom.carousel.innerHTML = carouselGenHTML;
+        const firstCarouselItem = thisHome.dom.carousel.querySelectorAll(
+            select.home.corouselItem
+        )[0];
+        firstCarouselItem.classList.add(classNames.home.carouselItemActive);
+        console.log(firstCarouselItem);
     }
 
     renderHomeButton(photoPath, buttonDOMElement, buttonClass, buttonText) {

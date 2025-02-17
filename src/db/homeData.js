@@ -23,4 +23,15 @@ export const home = {
             subtitlePart3: 'AM',
         },
     },
+    items: [
+        {
+
+        },
+        {
+
+        },
+        {
+
+        }
+    ]
 }
