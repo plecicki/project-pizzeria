@@ -3,6 +3,7 @@ import { appAdvice } from "./appAdvice.js";
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 import Booking from "./components/Booking.js";
+import Home from "./components/Home.js";
 
 const app = {
   initPages: function () {
@@ -52,6 +53,13 @@ const app = {
     thisApp.bookingContainer = document.querySelector(select.containerOf.booking);
 
     new Booking(thisApp.bookingContainer);
+  },
+  initHome: function () {
+    const thisApp = this;
+
+    thisApp.homeContainer = document.querySelector(select.containerOf.home);
+
+    new Home(thisApp.homeContainer);
   },
   initMenu: function () {
     const thisApp = this;
@@ -104,6 +112,7 @@ const app = {
     thisApp.initCart();
     thisApp.initPages();
     thisApp.initBooking();
+    thisApp.initHome();
   },
 };
 
